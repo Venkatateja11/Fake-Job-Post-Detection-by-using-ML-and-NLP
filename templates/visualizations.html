@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizations</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">Fake Job Post Detecting</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/load_data">Load Data</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/preprocess">Preprocess</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/visualizations">Visualizations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/model">Model</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/predict">Prediction</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="bg-info text-white text-center py-5">
+        <div class="container">
+            <h1>Visualizations and Insights</h1>
+            <p class="lead">Explore key insights through word clouds and visual charts.</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="py-5">
+        <div class="container">
+            <!-- Word Clouds Section -->
+            <h2 class="mb-4 text-center">Word Clouds</h2>
+            <div class="row mb-5">
+                <div class="col-md-6">
+                    <div class="card shadow-sm border-0">
+                        <img src="/static/images/fake_wordcloud.png" alt="Fake Job Word Cloud" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Fake Job Postings</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card shadow-sm border-0">
+                        <img src="/static/images/real_wordcloud.png" alt="Real Job Word Cloud" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Real Job Postings</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Visual Insights Section -->
+            <h2 class="mb-4 text-center">Visual Insights</h2>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <div class="card shadow-sm border-0">
+                        <img src="/static/images/job_distribution.png" alt="Fake vs Real Job Distribution" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Distribution of Fake vs Real Jobs</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm border-0">
+                        <img src="/static/images/top_locations.png" alt="Top Job Locations" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Top 10 Locations in Job Postings</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm border-0">
+                        <img src="/static/images/top_industries.png" alt="Top Industries" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Top 10 Industries in Job Postings</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm border-0">
+                        <img src="/static/images/top_titles.png" alt="Top Job Titles" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Top 10 Job Titles</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm border-0">
+                        <img src="/static/images/company_profile_length.png" alt="Company Profile Length Distribution" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Company Profile Length Distribution</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-3">
+        <div class="container text-center">
+            <p>&copy; 2025 Fake Job Predictor. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
